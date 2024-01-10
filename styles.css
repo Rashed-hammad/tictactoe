@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 20px;
+  padding: 0;
+  position: relative;
+  height: 100vh;
+  background-image: url(xo.jpg);
+}
+
+.square {
+  float: left;
+  background: #fff;
+  border: 1px solid #6cb4ee;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 50px;
+  text-align: center;
+  width: 50px;
+}
+h1 {
+  color: #6cb4ee;
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.game {
+  display: flex;
+  flex-direction: row;
+}
+.base {
+  position: absolute;
+  text-align: center;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  padding: 60px 70px;
+  border-radius: 8px;
+
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+input {
+  padding: 5px 10px;
+  border-radius: 6px;
+  width: 250px;
+  border: 1px solid #6cb4ee;
+}
+.btn {
+  margin-top: 20px;
+  background-color: #6cb4ee;
+  padding: 5px 10px;
+  border-radius: 6px;
+  border: none;
+  color: white;
+  transition: 0.2s;
+}
+.btn:hover {
+  transform: scale(1.1);
+}
+.game-info {
+  margin-left: 20px;
+}
